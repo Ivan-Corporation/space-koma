@@ -1,0 +1,88 @@
+.stars::before,
+.stars::after,
+.stars::before,
+.stars::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: .2vmin;
+	height: .2vmin;
+	border-radius: 50%;
+	color: transparent;
+	animation: blink 8s linear infinite;
+	margin-top: 5%;
+}
+
+
+.stars::after {
+	box-shadow: 80vw 14vh .2vmin rgb(255, 255, 255),
+		88vw 18vh .1vmin rgb(255, 255, 255),
+		77vw 51vh .2vmin rgb(255, 255, 255),
+		2vw 6vh .1vmin rgb(255, 255, 255),
+		12vw 16vh .2vmin rgb(255, 255, 255),
+		85vw 22vh .1vmin rgb(255, 255, 255),
+		91vw 14vh .2vmin rgb(255, 255, 255),
+		98vw 15vh .1vmin rgb(255, 255, 255),
+		94vw 29vh .2vmin rgb(255, 255, 255),
+		29vw 19vh .1vmin rgb(255, 255, 255),
+		94vw 12vh .1vmin rgb(255, 255, 255),
+		52vw 7vh .2vmin rgb(255, 255, 255),
+		55vw 6vh .1vmin rgb(255, 255, 255),
+		51vw 3vh .2vmin rgb(255, 255, 255),
+		58vw 15vh .1vmin rgb(255, 255, 255),
+		54vw 29vh .2vmin rgb(255, 255, 255),
+		59vw 19vh .1vmin rgb(255, 255, 255),
+		44vw 12vh .1vmin rgb(255, 255, 255),
+		30vw 6vh .2vmin rgb(255, 255, 255),
+		15vw 1vh .1vmin rgb(255, 255, 255),
+		12vw 16vh .1vmin rgb(255, 255, 255),
+		69vw 11vh .2vmin rgb(255, 255, 255),
+		79vw 5vh .2vmin rgb(255, 255, 255),
+		89vw 5vh .2vmin rgb(255, 255, 255),
+		69vw 2vh .2vmin rgb(255, 255, 255),
+		24vw 21vh .1vmin rgb(255, 255, 255),
+		23vw 17vh .2vmin rgb(255, 255, 255),
+		14vw 20vh .2vmin rgb(255, 255, 255),
+		5vw 29vh .2vmin rgb(255, 255, 255),
+		75vw 29vh .2vmin rgb(255, 255, 255),
+		76vw 23vh .2vmin rgb(255, 255, 255),
+		7vw 14vh .2vmin rgb(255, 255, 255),
+		64vw 28vh .2vmin rgb(255, 255, 255),
+		88vw 32vh .2vmin rgb(255, 255, 255),
+		55vw 41vh .2vmin rgb(255, 255, 255),
+		43vw 25vh .2vmin rgb(255, 255, 255),
+		22vw 31vh .2vmin rgb(255, 255, 255),
+		11vw 11vh .2vmin rgb(255, 255, 255),
+		15vw 37vh .2vmin rgb(255, 255, 255),
+		5vw 21vh .2vmin rgb(255, 255, 255),
+		6vw 55vh .2vmin rgb(255, 255, 255),
+		78vw 18vh .2vmin rgb(255, 255, 255),
+		71vw 20vh .2vmin rgb(255, 255, 255),
+		85vw 34vh .2vmin rgb(255, 255, 255),
+		25vw 37vh .1vmin rgb(255, 255, 255);
+
+}
+
+@keyframes blink {
+	0% {
+		opacity: .1;
+	}
+
+	33% {
+		opacity: .5;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	77% {
+		opacity: .5;
+	}
+
+	100% {
+		opacity: .1;
+	}
+}

@@ -13,8 +13,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import { Container } from '@mui/system';
-
-
+import './styles/links.css'
+import './styles/stars.scss'
 
 
 interface Props {
@@ -82,7 +82,7 @@ function App(props: Props) {
 				}}
 			>
 
-				<Box sx={{ display: 'flex' }}>
+				<Box className='stars' sx={{ display: 'flex' }}>
 					<AppBar component="nav">
 						<Toolbar>
 							<IconButton
@@ -137,13 +137,54 @@ function App(props: Props) {
 			<Routes>
 
 				<Route path="/" element={<HomeFacts />} />
-				<Route path="/money" element={<SpaceNews />} />
-				<Route path="/rooms" element={<Forecast />} />
+
+				<Route path="/space-news" element={<SpaceNews />} />
+				<Route path="/forecast" element={<Forecast />} />
 
 
 
 			</Routes>
 
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{
+					ease: "easeInOut",
+					duration: 1,
+					delay: 1,
+				}}
+			>
+				<Divider variant="middle" style={{ marginLeft: '10%', marginRight: '10%' }} />
+
+				<footer className='footer' style={{ marginBottom: '5%' }}>
+					<div className="wrapper">
+						<a href='https://www.t.me/KomarIvan' style={{ color: 'palegoldenrod' }}>
+							<div className="icon facebook">
+								<div className="tooltip">Telegram</div>
+								<span><i className="fab fa-telegram"></i></span>
+							</div>
+						</a>
+						<a href='https://twitter.com/KomaHuman' style={{ color: 'palegoldenrod' }}>
+							<div className="icon twitter">
+								<div className="tooltip">Twitter</div>
+								<span><i className="fab fa-twitter"></i></span>
+							</div>
+						</a>
+						<a href='https://github.com/Ivan-Corporation' style={{ color: 'palegoldenrod' }}>
+							<div className="icon github">
+								<div className="tooltip">Github</div>
+								<span><i className="fab fa-github"></i></span>
+							</div>
+						</a>
+						<a href='https://www.youtube.com/channel/UCWj8NJUnyji2xHHThU1TTsw' style={{ color: 'palegoldenrod' }}>
+							<div className="icon youtube">
+								<div className="tooltip">Youtube</div>
+								<span><i className="fab fa-youtube"></i></span>
+							</div>
+						</a>
+					</div>
+				</footer>
+			</motion.div>
 		</React.Fragment >
 	);
 }
